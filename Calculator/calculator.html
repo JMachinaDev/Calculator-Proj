@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Press+Start+2P&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h2>Lazy Calculator</h2>
+    <br>
+    <h4>By Killsocks</h4>
+    <div class="container">
+        
+        <!-- DISPLAY ... CLEAR AND OUTCOME/DISPLAY -->
+        <span class="display">
+            <div>
+                <span class="clear-delete" id="clear">CE</span>
+            </div>
+            <span id="outcome">
+                <span id="outcome-top"></span>
+                <span id="outcome-bot"></span>
+            </span>
+        </span>
+
+
+        <!-- MAIN NUMBERS BOX 1,2,3,4,5,6,7,8,9,0,(.),(=) -->
+        <span class="main-numbers">
+            <div id="numbers-1st-row">
+                <span class="btn" id="seven">7</span>
+                <span class="btn" id="eight">8</span>
+                <span class="btn" id="nine">9</span>
+            </div>
+            <div id="numbers-2nd-row">
+                <span class="btn" id="four">4</span>
+                <span class="btn" id="five">5</span>
+                <span class="btn" id="six">6</span>
+            </div>
+            <div id="numbers-3rd-row">
+                <span class="btn" id="one">1</span>
+                <span class="btn" id="two">2</span>
+                <span class="btn" id="three">3</span>
+            </div>
+            <div id="numbers-4th-row">
+                <span class="btn" id="zero">0</span>
+                <span class="btn" id="decimal">.</span>
+                <span class="op" id="equals">=</span>
+            </div>
+        </span>
+
+
+        <!-- OPERATORS ... / , * , - , + -->
+        <span class="operators">
+            <div>
+                <span class="clear-delete" id="delete">DEL</span>
+            </div>
+            <div>
+                <span class="op" id="divide">/</span>
+            </div>
+            <div>
+                <span class="op" id="multiply">*</span>
+            </div>
+            <div>
+                <span class="op" id="subtract">-</span>
+            </div>
+            <div>
+                <span class="op" id="addition">+</span>
+            </div>
+        </span>
+
+    </div>
+
+    <script src="calcjs.js" defer></script>
+</body>
+</html>
